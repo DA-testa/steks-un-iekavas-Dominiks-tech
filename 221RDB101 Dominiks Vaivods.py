@@ -28,35 +28,35 @@ def find_mismatch(text):
     return "Success"
             # Process closing bracket, write your code here
         
-def main():
-    # print("ievadi I vai F: ")
-    text = input()
-    mismatch = find_mismatch(text)
-    print(mismatch)
-
-
 # def main():
 #     # print("ievadi I vai F: ")
 #     text = input()
-#     if text == "I":
-#         # print("Kods: ")
-#         tex2 =input()
-#         mismatch = find_mismatch(tex2)
-#         print(mismatch)
-#     elif text == "F":
-#         # print("ievadi faila nr. no 0 līdz 5: ")
-#         failins= input()
-#         failins1 = int(failins)
-#         if failins1 >= 0 and failins1 < 5:
-#             file = open(failins1, "r")
-#             tex3 = file.read()
-#             print(tex3)
-#             file.close()
+#     mismatch = find_mismatch(text)
+#     print(mismatch)
+
+
+def main():
+    print("ievadi I vai F: ")
+    text = input()
+    if text == "I":
+        print("Kods: ")
+        tex2 =input()
+        mismatch = find_mismatch(tex2)
+        print(mismatch)
+    elif text == "F":
+        print("ievadi faila nr. no 0 līdz 5: ")
+        failins= input()
+        failins1 = int(failins)
+        if failins1 >= 0 and failins1 < 5:
+            file = open(failins1, "r")
+            tex3 = file.read()
+            print(tex3)
+            file.close()
             
-#             mismatch = find_mismatch(tex3)
-#             print(mismatch)
-#         else:
-#             print("nekorekta ievade")
+            mismatch = find_mismatch(tex3)
+            print(mismatch)
+        else:
+            print("nekorekta ievade")
 
 
 
